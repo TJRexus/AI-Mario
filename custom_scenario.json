@@ -1,0 +1,37 @@
+{
+    "done": {
+      "variables": {
+        "lives": {
+          "op": "equal",
+          "reference": -1
+        },
+        "levelLo": {
+          "op": "greater than",
+          "reference": 1
+        }
+      },
+      "condition": "any"
+    },
+    "reward": {
+      "variables": {
+        "xscrollLo": {
+          "reward": 0.1,
+          "measurement": "delta"
+        },
+        "time": {
+          "penalty": 0.05,
+          "measurement": "delta"
+        },
+        "lives": {
+          "penalty": 20,
+          "measurement": "delta"
+        },
+        "levelLo": {
+          "reward": 100,
+          "op": "greater than",
+          "reference": 1
+        }
+      }
+    }
+  }
+  
